@@ -26,12 +26,12 @@ public class OCRTest {
 
     @Test
     public void testGetCoordsWithSetMinSimilarity_revertsToDefaultMinSimilarity() throws Exception {
-        String imageName = "acceptAll.png";
+        String imageName = "LoginField.png";
         String imageLocation = imgDir + imageName;
         BufferedImage testImg = convertImgFileToBufferedImage(imageLocation);
 
         assertThat("default minSimilarity should be used", Settings.MinSimilarity, is(DEFAULT_MIN_SIMILARITY));
-        ocr.getCoords(testImg, imageLocation, 0.9);
+        ocr.getCoords(testImg, imageLocation, 0.8);
         assertThat("minSimilarity should revert back to default", Settings.MinSimilarity, is(DEFAULT_MIN_SIMILARITY));
     }
 

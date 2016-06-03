@@ -31,6 +31,7 @@ import org.sikuli.basics.Debug;
 import org.sikuli.basics.Settings;
 import org.sikuli.script.Finder;
 import org.sikuli.script.Match;
+//import org.sikuli.script.TextRecognizer
 
 import javax.imageio.ImageIO;
 import java.awt.geom.Point2D;
@@ -159,5 +160,3 @@ public class OCR {
         new WebDriverWait(driver, timeoutDuration).until((WebDriver driver) -> elementExists(targetImgPath));
     }
 }
-
-
