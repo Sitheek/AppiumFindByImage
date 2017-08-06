@@ -75,7 +75,7 @@ public class OCRMargonemTestSuite {
 
         OCR.waitUntilImageExists(passwordFieldImgLoc, 60);
         OCR.clickByImage(passwordFieldImgLoc);
-        driver.findElementByClassName("android.widget.EditText").sendKeys("MAINboard000!");
+        driver.findElementByClassName("android.widget.EditText").sendKeys("password");
         driver.findElementByClassName("android.widget.Button").click();
 
         OCR.waitUntilImageExists(loginLoginButtonImgloc, 60);
